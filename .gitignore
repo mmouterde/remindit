@@ -25,3 +25,7 @@ data/elasticsearch
 .project
 
 target/
+/node_modules
+/src/main/webapp/js/bookmarklet/bookmarklet.min.js
+/src/main/webapp/js/bookmarklet/sendToRemindIt_all.min.js
+/.tmp

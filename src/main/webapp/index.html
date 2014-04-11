@@ -31,8 +31,7 @@
 <div class="container" style="text-align: center;">
     <hr/>
     <div class="container">
-        <button onclick="bookmarklet();">Test</button>
-        <a href="javascript:(function () { var url = 'http://localhost:8080/index'; if (window.myBookmarklet === undefined) { var done = false; var script = document.createElement('script'); script.src = 'http://localhost:8080/js/myLib.js'; script.onload = script.onreadystatechange = function () { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { done = true; myBookmarklet(); } }; document.getElementsByTagName('head')[0].appendChild(script); } else { myBookmarklet(); }})();">Drag
+        <a href="javascript:!function(){var a='http://localhost:8080/js/sendToRemindIt_all.min.js';if(void 0===window.sendToRemindIt){var b=!1,c=document.createElement('script');c.src=a,c.onload=c.onreadystatechange=function(){b||this.readyState&&'loaded'!=this.readyState&&'complete'!=this.readyState||(b=!0,sendToRemindIt())},document.getElementsByTagName('head')[0].appendChild(c)}else sendToRemindIt()}();">Drag
             this link to favotites</a>
     </div>
     <div class="footer">
@@ -53,7 +52,5 @@
 <script type="text/javascript" charset="UTF-8" src="js/controllers.js"></script>
 <script type="text/javascript" charset="UTF-8" src="js/app.js"></script>
 <script type="text/javascript" charset="UTF-8" src="js/services.js"></script>
-
-<script type="text/javascript" charset="UTF-8" src="js/bookmarklet.js"></script>
 </body>
 </html>
